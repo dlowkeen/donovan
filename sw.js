@@ -26,31 +26,31 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-94897cb3c6fb601c27d4.js"
+    "url": "webpack-runtime-779addcad8b525946842.js"
   },
   {
-    "url": "commons.91edbc0fb9a11565b4b8.css"
+    "url": "commons.10a2c5397265d761eaee.css"
   },
   {
-    "url": "commons-1996407363c48a11660b.js"
+    "url": "commons-f59559b797a527cf1e86.js"
   },
   {
-    "url": "app-44e8e955eeeb9302e215.js"
+    "url": "app-060d6c9aa06b35f34d4c.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-561dd892156e2b152afb.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9e60e0050cb60a0862cb4a19f0c961ae"
+    "revision": "a0ab757fd9ce64d4dbfa14a75b26fa75"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "456dbe00f4259399a35c460a4eb1235f"
+    "revision": "d7d2a564ad5d2287b6cc541ba58735d2"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "e4145a2b01ae5e938d2f440bb55f6665"
+    "revision": "0a648ebdb8c74da9894ddfe04a80a3ad"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -69,12 +69,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/gatsby-starter-grayscale`), ``)
+  pathname = pathname.replace(new RegExp(`^/donovan`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/gatsby-starter-grayscale/app-44e8e955eeeb9302e215.js`))) {
+  if (!resources || !(await caches.match(`/donovan/app-060d6c9aa06b35f34d4c.js`))) {
     return await fetch(event.request)
   }
 
@@ -87,7 +87,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/gatsby-starter-grayscale/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/donovan/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 

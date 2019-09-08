@@ -94,6 +94,11 @@ export default class Header extends Component {
                   </a>
                 </Scroll>
               </li>
+              <li>
+                <a className="nav-link" href="https://medium.com/@dlowkeen" target="_blank" rel="noopener noreferrer">
+                  Thoughts
+                </a>
+              </li>
             </ul>
           </div>
         </div>

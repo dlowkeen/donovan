@@ -1,15 +1,6 @@
 {
-  "name": "gatsby-starter-grayscale",
+  "name": "donovan",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Grayscale by startbootstrap",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-grayscale.git"
-  },
-  "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
-  },
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -40,14 +31,5 @@
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-grayscale"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-grayscale#readme"
+  "license": "MIT"
 }

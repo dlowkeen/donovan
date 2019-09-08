@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
 import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
+import TypingHeadline from '../components/TypingHeadline';
 
 import ipad from '../assets/images/ipad.png';
 import demoImage1 from '../assets/images/demo-image-01.jpg';
@@ -23,7 +24,7 @@ const IndexPage = () => (
         <div className="mx-auto text-center">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
           <h2 className="text-white-50 mx-auto mt-2 mb-5">
-            {config.subHeading}
+            <TypingHeadline strings={config.subHeading} />
           </h2>
           <Scroll type="id" element="about">
             <a href="#about" className="btn btn-primary">

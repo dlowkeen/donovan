@@ -9,7 +9,13 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-grayscale/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Donovan Lowkeen',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  subHeading: [
+    "I am a software <i>engineer</i>",
+    "I am a high altitude <i>mountaineer</i>",
+    "I am a problem <i>solver</i>",
+    "I am an ice cream <i>connoisseur</i>",
+    "I am a <i>feminist</i>"
+  ],
 
   // social
   socialLinks: [

@@ -26,27 +26,31 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6ee5887357e32df26fee.js"
+    "url": "webpack-runtime-ced4ba81828f61254eec.js"
   },
   {
-    "url": "commons.327cff55017d5e663331.css"
+    "url": "commons.a520396630c28ceb22ed.css"
   },
   {
-    "url": "commons-4392608b111a63a60615.js"
+    "url": "commons-3bc65b0d3cd20e2ba56a.js"
   },
   {
-    "url": "app-c6faef8ae972502d0664.js"
+    "url": "app-babc24425238ca676d4b.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-561dd892156e2b152afb.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-9770429d1adfdaf8e3b8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7b297047a7875d25cf2d53576724caf1"
+    "revision": "32ed9674d185018ebeb50a1cd39c491c"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "ab12a655188a3d6c02085b79f01260be"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "c3d53c0789b4468ef7addd301234e547"
+    "revision": "0a648ebdb8c74da9894ddfe04a80a3ad"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -65,12 +69,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/donovan`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-c6faef8ae972502d0664.js`))) {
+  if (!resources || !(await caches.match(`/donovan/app-babc24425238ca676d4b.js`))) {
     return await fetch(event.request)
   }
 
@@ -83,7 +87,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/donovan/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 

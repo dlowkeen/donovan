@@ -6,9 +6,9 @@ import Scroll from '../components/Scroll';
 import config from '../../config';
 import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
-import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 import TypingHeadline from '../components/TypingHeadline';
+import PhotographyPage from '../components/photography/PhotographyPage';
 
 import ipad from '../assets/images/ipad.png';
 import nudge from '../assets/images/nudge.png';
@@ -119,8 +119,17 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <Subscribe />
+    <section id="projects" className="projects-section bg-light">
+      <div>
+        <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div className="col-xl-12 col-lg-12">
+            <PhotographyPage />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <br />
     <SocialLinks />
     <Footer />
   </Layout>

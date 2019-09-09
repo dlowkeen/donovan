@@ -11,9 +11,9 @@ import Header from '../components/Header';
 import TypingHeadline from '../components/TypingHeadline';
 
 import ipad from '../assets/images/ipad.png';
-import demoImage1 from '../assets/images/demo-image-01.jpg';
-import demoImage2 from '../assets/images/demo-image-02.jpg';
-import bgMaster from '../assets/images/bg-masthead.jpg';
+import nudge from '../assets/images/nudge.png';
+import pirateShip from '../assets/images/pirate_ship.gif';
+import simpleQuoteBook from '../assets/images/simpleQuoteBook.png';
 
 const IndexPage = () => (
   <Layout>
@@ -60,7 +60,7 @@ const IndexPage = () => (
         <div className="row align-items-center no-gutters mb-4 mb-lg-5">
           <div className="col-xl-8 col-lg-7">
             <a href="http://www.simplequotebook.com/" target="_blank" rel="noopener noreferrer">
-              <img className="img-fluid mb-3 mb-lg-0" src={bgMaster} alt="" />
+              <img className="img-fluid mb-3 mb-lg-0" src={simpleQuoteBook} alt="" />
             </a>
           </div>
           <div className="col-xl-4 col-lg-5">
@@ -76,15 +76,15 @@ const IndexPage = () => (
         <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div className="col-lg-6">
             <a href="http://www.nudge-me.com/" target="_blank" rel="noopener noreferrer">
-              <img className="img-fluid" src={demoImage1} alt="" />
+              <img className="img-fluid" src={nudge} alt="" />
             </a>
           </div>
           <div className="col-lg-6">
-            <div className="bg-black text-center h-100 project">
+            <div className="bg-white text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 className="text-white">Nudge</h4>
-                  <p className="mb-0 text-white-50">
+                  <h4 className="text-black">Nudge</h4>
+                  <p className="mb-0 text-black-50">
                   We curate dates, gifts, and gestures based on your relationship, location, and interests. 
                   Then we search the web and notify you of great deals and events so you don't have to.
                   </p>
@@ -98,15 +98,15 @@ const IndexPage = () => (
         <div className="row justify-content-center no-gutters">
           <div className="col-lg-6">
             <a href="https://github.com/ARKrew/workingArgo" target="_blank" rel="noopener noreferrer">
-              <img className="img-fluid" src={demoImage2} alt="" />
+              <img className="img-fluid" src={pirateShip} alt="" />
             </a>
           </div>
           <div className="col-lg-6 order-lg-first">
-            <div className="bg-black text-center h-100 project">
+            <div className="bg-white text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 className="text-white">ARgo</h4>
-                  <p className="mb-0 text-white-50">
+                  <h4 className="text-black">ARgo</h4>
+                  <p className="mb-0 text-black-50">
                   ARgo is a mobile application that uses location intelligence and augmented reality to 
                   immerse users into new worlds through AR portals and collect badges with their friends.
                   </p>

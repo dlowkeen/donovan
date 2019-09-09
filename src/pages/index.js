@@ -10,7 +10,6 @@ import Header from '../components/Header';
 import TypingHeadline from '../components/TypingHeadline';
 import PhotographyPage from '../components/photography/PhotographyPage';
 
-import ipad from '../assets/images/ipad.png';
 import nudge from '../assets/images/nudge.png';
 import pirateShip from '../assets/images/pirate_ship.gif';
 import simpleQuoteBook from '../assets/images/simpleQuoteBook.png';
@@ -51,7 +50,6 @@ const IndexPage = () => (
             </p>
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
       </div>
     </section>
 
